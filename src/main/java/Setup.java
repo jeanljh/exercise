@@ -18,8 +18,8 @@ public class Setup {
 //        System.setProperty("webdriver.chrome.driver", "src/main/drivers/chromedriver.exe");
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-//        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+//        options.addArguments("start-maximized");
+        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 //        options.addArguments("enable-automation");
 //        options.addArguments("--headless");
 //        options.addArguments("--no-sandbox");
