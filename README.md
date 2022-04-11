@@ -26,17 +26,17 @@ Method 4: Run in Selenium Grid (optional)
 1. To setup Selenum Grid in local machine, download server jar file from https://www.selenium.dev/downloads/
 2. Open one command prompt for each of the following commands below in exact order. Run command: cd [jar file directory] before execute these commands:
 
-java -jar selenium-server-4.1.3.jar event-bus
+java -jar [jar file name] event-bus
   
-java -jar selenium-server-4.1.3.jar sessions
+java -jar [jar file name] sessions
   
-java -jar selenium-server-4.1.3.jar sessionqueue
+java -jar [jar file name] sessionqueue
   
-java -jar selenium-server-4.1.3.jar distributor --sessions http://localhost:5556 --sessionqueue http://localhost:5559 --bind-bus false
+java -jar [jar file name] distributor --sessions http://localhost:5556 --sessionqueue http://localhost:5559 --bind-bus false
   
-java -jar selenium-server-4.1.3.jar router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559
+java -jar [jar file name] router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559
   
-java -jar selenium-server-4.1.3.jar node --detect-drivers true
+java -jar [jar file name] node --detect-drivers true
 
 Refer to complete guide: https://www.selenium.dev/documentation/grid/getting_started/
 
