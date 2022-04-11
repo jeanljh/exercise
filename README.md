@@ -24,7 +24,8 @@ Method 3: Run with Github actions
 
 Method 4: Run in Selenium Grid (optional)
 1. To setup Selenum Grid in local machine, download server jar file from https://www.selenium.dev/downloads/
-2. Open one command prompt for each of the following commands below in exact order. Run command: cd <jar file directory> before execute these commands:
+2. Open one command prompt for each of the following commands below in exact order. R
+un command: cd <jar file directory> before execute these commands:
 
 java -jar selenium-server-4.1.3.jar event-bus
   
