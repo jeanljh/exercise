@@ -3,9 +3,11 @@
 [![Java CI with Maven](https://github.com/jeanljh/exercise/actions/workflows/maven.yml/badge.svg)](https://github.com/jeanljh/exercise/actions/workflows/maven.yml)
 
 This simple test automation framework consists of these stacks:
+
 Selenium
 Selenium Grid
 Java
+Maven
 TestNG
 RestAssured
 TestNG report
