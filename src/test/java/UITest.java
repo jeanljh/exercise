@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -10,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 
 public class UITest extends Init {
     PageObject po;
-    @BeforeTest
+    @BeforeMethod
     @Parameters("runGrid")
     public void setup(@Optional("runGrid") String runGrid) throws MalformedURLException{
         Init init = new Init();
@@ -22,13 +23,15 @@ public class UITest extends Init {
         driver.get("https://amazon.in");
     }
 
+
     @Test
+    @Step("Run test")
     public void Test() {
         // navigate from main page to product page (Samsung)
-        Helper.waitForElementClickable(po.btnHamburger()).click();
+        Helper.waitForElementClickable(po.menuHamburger()).click();
         Helper.waitForElementClickable(po.menuMain()).click();
         Helper.waitForElementClickable(po.menuSub()).click();
-        Helper.waitForElementClickable(po.lblItem()).click();
+        Helper.waitForElementClickable(po.lblBrand()).click();
         Helper.waitForUrlContains("Samsung");
 
         // sort and view by "Price: High to Low"
@@ -55,7 +58,7 @@ public class UITest extends Init {
         Helper.waitForTextPresent(po.txtProdTitle(), exp);
 
         // validate "About" section of the product is shown
-        assertTrue(po.txtProdFeature().isDisplayed());
+        assertTrue(po.paneProdAbout().isDisplayed());
 
         // append "About" text, display in html report and console.log
         StringBuilder about = new StringBuilder();
@@ -64,7 +67,7 @@ public class UITest extends Init {
         System.out.print(about);
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         if (driver != null)
             driver.quit();

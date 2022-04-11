@@ -4,8 +4,8 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class PageObject extends Init {
-    public By btnHamburger() {
-        return By.cssSelector(".hm-icon.nav-sprite");
+    public By menuHamburger() {
+        return By.id("nav-hamburger-menu");
     }
 
     public By menuMain() {
@@ -16,12 +16,12 @@ public class PageObject extends Init {
         return By.xpath("//a[text()='Televisions']");
     }
 
-    public By lblItem() {
+    public By lblBrand() {
         return By.xpath("//span[text()='Samsung']");
     }
 
     public By ddlSort() {
-        return By.cssSelector("#a-autoid-0-announce .a-dropdown-prompt");
+        return By.cssSelector("#a-autoid-0-announce > span.a-dropdown-prompt");
     }
 
     public By ddlSortPrice() {
@@ -37,14 +37,14 @@ public class PageObject extends Init {
     }
 
     public List<WebElement> prices() {
-        return driver.findElements(By.cssSelector("[cel_widget_id] > .s-card-container .a-price-whole"));
+        return driver.findElements(By.cssSelector("div[cel_widget_id] > div.s-card-container span.a-price-whole"));
     }
 
-    public WebElement txtProdFeature() {
+    public WebElement paneProdAbout() {
         return driver.findElement(By.cssSelector("#feature-bullets > ul"));
     }
 
     public List<WebElement> txtProdAbout() {
-        return driver.findElements(By.cssSelector("#feature-bullets .a-list-item"));
+        return driver.findElements(By.cssSelector("#feature-bullets span.a-list-item"));
     }
 }
