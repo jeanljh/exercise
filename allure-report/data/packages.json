@@ -1,0 +1,39 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "APITest",
+    "children" : [ {
+      "name" : "Test",
+      "uid" : "c60adb39d56e0382",
+      "parentUid" : "2a0fa489e3ee28648a885ac50b1b162b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649664756873,
+        "stop" : 1649664759940,
+        "duration" : 3067
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2a0fa489e3ee28648a885ac50b1b162b"
+  }, {
+    "name" : "UITest",
+    "children" : [ {
+      "name" : "Test",
+      "uid" : "c7e542d8d5bc4189",
+      "parentUid" : "604d53b9e2c14e84b15dc212b05b84a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649664763998,
+        "stop" : 1649664773992,
+        "duration" : 9994
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "604d53b9e2c14e84b15dc212b05b84a5"
+  } ]
+}

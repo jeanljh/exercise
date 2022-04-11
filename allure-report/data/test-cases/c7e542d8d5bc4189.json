@@ -1,0 +1,94 @@
+{
+  "uid" : "c7e542d8d5bc4189",
+  "name" : "Test",
+  "fullName" : "UITest.Test",
+  "historyId" : "6b5b389cf5333ba38d17f814a8b5c4d7",
+  "time" : {
+    "start" : 1649664763998,
+    "stop" : 1649664773992,
+    "duration" : 9994
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1649664759985,
+      "stop" : 1649664763990,
+      "duration" : 4005
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1649664773993,
+      "stop" : 1649664774621,
+      "duration" : 628
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "UITest"
+  }, {
+    "name" : "testClass",
+    "value" : "UITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "local"
+  }, {
+    "name" : "suite",
+    "value" : "exercise"
+  }, {
+    "name" : "subSuite",
+    "value" : "UITest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MPCV7S1T"
+  }, {
+    "name" : "thread",
+    "value" : "5048@LAPTOP-MPCV7S1T.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c7e542d8d5bc4189.json",
+  "parameterValues" : [ ]
+}
