@@ -9,6 +9,7 @@ This simple test automation framework consists of these stacks: Selenium, Seleni
 Run command: git clone git@github.com:jeanljh/exercise.git
 
 2. Running the tests:
+
 Method 1: Run locally
 1. Open in IDE (e.g. IntelliJ IDEA)
 2. Go to /src/test/java and run APITest and UITest
