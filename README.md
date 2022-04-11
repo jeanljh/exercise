@@ -42,7 +42,6 @@ Refer to complete guide: https://www.selenium.dev/documentation/grid/getting_sta
 3. Open this repository in IDE
 4. Go to /src/test/suite and run grid.xml to trigger tests in Selenium Grid in your local machine
 
-Test Report
 There are 2 types of html reports generated:
 1. Allure report: go to allure-report/index.html
 2. TestNG report: go to test-output/emailable-report.html
