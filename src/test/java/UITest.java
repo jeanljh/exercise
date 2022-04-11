@@ -1,16 +1,16 @@
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 
 public class UITest extends Setup {
     @BeforeTest
-    public void setup() {
+    @Parameters("runGrid")
+    public void setup(@Optional("runGrid") String runGrid) throws MalformedURLException{
         Setup setup = new Setup();
-        setup.InitWebDriver();
-
+        if (runGrid == "grid")
+            setup.InitWebDriverGrid();
+        else
+            setup.InitWebDriver();
     }
 
     @Test
