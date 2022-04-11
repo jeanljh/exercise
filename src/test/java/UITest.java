@@ -15,6 +15,9 @@ public class UITest extends Init {
     @Parameters("runGrid")
     public void setup(@Optional("runGrid") String runGrid) throws MalformedURLException{
         Init init = new Init();
+        // by default tests run in local environment
+        // similarly execute /suite/local.xml to run tests locally via xml file
+        // optionally, execute /suite/grid.xml to run tests in selenium grid
         if (runGrid == "grid")
             init.InitWebDriverGrid();
         else
@@ -23,9 +26,7 @@ public class UITest extends Init {
         driver.get("https://amazon.in");
     }
 
-
     @Test
-    @Step("Run test")
     public void Test() {
         // navigate from main page to product page (Samsung)
         Helper.waitForElementClickable(po.menuHamburger()).click();
