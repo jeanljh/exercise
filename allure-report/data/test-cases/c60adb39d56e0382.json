@@ -1,0 +1,62 @@
+{
+  "uid" : "c60adb39d56e0382",
+  "name" : "Test",
+  "fullName" : "APITest.Test",
+  "historyId" : "2aeed9cf220cb3119790b076b2232f3f",
+  "time" : {
+    "start" : 1649664756873,
+    "stop" : 1649664759940,
+    "duration" : 3067
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "APITest"
+  }, {
+    "name" : "testClass",
+    "value" : "APITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "local"
+  }, {
+    "name" : "suite",
+    "value" : "exercise"
+  }, {
+    "name" : "subSuite",
+    "value" : "APITest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-MPCV7S1T"
+  }, {
+    "name" : "thread",
+    "value" : "5048@LAPTOP-MPCV7S1T.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c60adb39d56e0382.json",
+  "parameterValues" : [ ]
+}
