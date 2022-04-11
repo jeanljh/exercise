@@ -36,10 +36,15 @@ Method 4: Run in Selenium Grid (optional)
 2. Open one command prompt for each of the following commands below in exact order. Run command: cd <jar file directory> before execute these commands:
 
 java -jar selenium-server-4.1.3.jar event-bus
+  
 java -jar selenium-server-4.1.3.jar sessions
+  
 java -jar selenium-server-4.1.3.jar sessionqueue
+  
 java -jar selenium-server-4.1.3.jar distributor --sessions http://localhost:5556 --sessionqueue http://localhost:5559 --bind-bus false
+  
 java -jar selenium-server-4.1.3.jar router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559
+  
 java -jar selenium-server-4.1.3.jar node --detect-drivers true
 
 Refer to complete guide: https://www.selenium.dev/documentation/grid/getting_started/
