@@ -1,8 +1,8 @@
-# exercise
+# selenium-gui-api-test
 
 [![Java CI with Maven](https://github.com/jeanljh/exercise/actions/workflows/maven.yml/badge.svg)](https://github.com/jeanljh/exercise/actions/workflows/maven.yml)
 
-This simple test automation framework consists of these stacks: Selenium, Selenium Grid, Java, Maven, TestNG, RestAssured, TestNG report, Allure report, GitHub Actions (CI pipeline)
+Example of a test automation framework for GUI and API tests and consists of these stacks: Selenium, Selenium Grid, Java, Maven, TestNG, RestAssured, TestNG report, Allure report, GitHub Actions (CI pipeline)
 
 1. Clone this repository: 
 Run command: git clone git@github.com:jeanljh/exercise.git
