@@ -5,8 +5,7 @@
 Example of a test automation framework for GUI and API tests and consists of these stacks: Selenium, Selenium Grid, Java, Maven, TestNG, RestAssured, TestNG report, Allure report, Docker, GitHub Actions (CI pipeline)
 
 ## ⚙Setup
-Step 1: Clone this repository: 
-Run command: `git clone git@github.com:jeanljh/selenium-gui-api-test.git`
+Step 1: Run command to clone this repository: `git clone git@github.com:jeanljh/selenium-gui-api-test.git`
 
 Step 2: Running the tests:
 
