@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>exercise</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 11 19:08:02 SGT 2022</td>
+<td>Started on:</td><td>Mon Nov 07 10:06:20 SGT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19356 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15948 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,38 +67,57 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='APITest.Test()'><b>Test</b><br>Test class: APITest</td>
-<td></td>
-<td>3</td>
-<td>APITest@1fb19a0</td></tr>
-<tr>
-<td title='UITest.Test()'><b>Test</b><br>Test class: UITest<br/>
-<a href="#Output-718150867" onClick='toggleBox("Output-718150867", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-718150867" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-718150867">
-
-Resolution : 4K Ultra HD (3840 x 2160) Resolution | Refresh Rate : 120 Hertz
-Connectivity: 4 HDMI ports to connect set top box, Blu-ray speakers or a gaming console | 2 USB ports to connect hard drives or other USB devices | One Connect Box for all your connectivity needs
-Sound: 60 Watts Output | Powerful Speakers with Dolby Digital Plus
-Smart TV Features : Prime Video, Hotstar, Netflix, Zee5 and many more | PC Mode | Universal Guide | Web Browser | Screen Mirroring
-Display: 100% Color Volume | Quantum HDR | Quantum Processor | HLG | Mega Contrast | Ultimate UHD Dimming
-Warranty Information: 1 manufacturer warranty and 1 year additional warranty on the panel from invoice date
-Installation: For requesting installation/wall mounting/demo of this product once delivered, please directly call Samsung support on [1800407267864 / 180057267864] and provide product's model name as well as seller's details mentioned on the invoice
-Easy Returns: This product is eligible for replacement within 10 days of delivery in case of any product defects, damage or features not matching the description<br/>
-</div>
-</td>
-<td></td>
+<td title='UITest.Test()'><b>Test</b><br>Test class: UITest</td>
+<td><div><pre>java.lang.AssertionError: sort price expected [true] but found [false]
+	at UITest.Test(UITest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace235154585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace235154585'><pre>java.lang.AssertionError: sort price expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at UITest.Test(UITest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
 <td>10</td>
-<td>UITest@14f9390f</td></tr>
+<td>UITest@4f6f416f</td></tr>
 </table><p>
 </body>
 </html>
