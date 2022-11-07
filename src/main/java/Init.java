@@ -12,30 +12,22 @@ import java.time.Duration;
 public class Init {
     public static WebDriver driver;
     public static WebDriverWait wait;
-    private ChromeOptions options;
 
     public WebDriver InitWebDriver() {
         WebDriverManager.chromedriver().setup();
-        options = new ChromeOptions();
-        options.addArguments("--headless");
-//        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
         InitWebDriverWait();
         return driver;
     }
 
     public WebDriver InitWebDriverGrid() throws MalformedURLException {
-        options = new ChromeOptions();
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
-//        driver.manage().window().maximize();
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
         InitWebDriverWait();
         return driver;
     }
 
     public WebDriver InitWebDriverDocker() throws MalformedURLException {
-        options = new ChromeOptions();
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-//        driver.manage().window().maximize();
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
         InitWebDriverWait();
         return driver;
     }
