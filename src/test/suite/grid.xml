@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="grid">
     <test name="exercise">
-        <parameter name = "runGrid" value="grid"/>
+        <parameter name = "env" value="grid"/>
         <classes>
             <class name="APITest"/>
             <class name="UITest"/>
